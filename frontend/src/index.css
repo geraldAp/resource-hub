@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  scrollbar-width: thin; /* Firefox */
+  scrollbar-color: #a0a0a0 transparent; /* Gray color */
+  background: #fff;
+  font-family: "Inter", sans-serif;
+  color: #000000cc;
+}
+
+body::-webkit-scrollbar {
+  width: 4px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #a0a0a0; /* Gray color */
+  border-radius: 4px; /* Border radius */
+}
+
+body::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+img {
+  max-width: 100%;
+}
+
+#Nav-link a.active {
+  background: var(--Primary, #4dff3e);
+}
+
+.resource-years::-webkit-scrollbar-track {
+  background: transparent;
+}
+.resource-years::-webkit-scrollbar-thumb {
+  background-color: #a0a0a0; /* Gray color */
+  border-radius: 4px; /* Border radius */
+}
+.resource-years::-webkit-scrollbar {
+  width: 4px;
+}
