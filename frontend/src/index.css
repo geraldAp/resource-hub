@@ -39,10 +39,7 @@ img {
 .resource-years::-webkit-scrollbar-track {
   background: transparent;
 }
-.resource-years::-webkit-scrollbar-thumb {
-  background-color: #a0a0a0; /* Gray color */
-  border-radius: 4px; /* Border radius */
-}
+
 .resource-years::-webkit-scrollbar {
-  width: 4px;
+  width: 0px;
 }

@@ -2,7 +2,7 @@ import { createClient } from "@sanity/client";
 import imageUrlBuilder from '@sanity/image-url'
 
 
-const client = createClient({
+export const client = createClient({
   projectId: "brsqr55j",
   dataset: "production",
   useCdn: true, // set to `false` to bypass the edge cache
@@ -11,7 +11,7 @@ const client = createClient({
 
 const builder = imageUrlBuilder(client);
 
-export function urlFor(source) {
+export function urlFor(source: any) {
   return builder.image(source);
 }
 

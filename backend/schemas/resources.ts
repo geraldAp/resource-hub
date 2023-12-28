@@ -10,6 +10,15 @@ export default {
             type: 'string',
         },
         {
+            name: 'slug',
+            title: 'Slug',
+            type: 'slug',
+            options: {
+                source: 'title', // Use the course_title field as the source for the slug
+                maxLength: 200,
+              },
+        },
+        {
             name: 'popular_books',
             type: 'array',
             title: 'Popular Books',

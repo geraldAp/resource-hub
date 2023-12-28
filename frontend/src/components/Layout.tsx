@@ -7,10 +7,10 @@ interface PropType {
 
 const Layout: React.FC<PropType> = ({ children }) => {
   return (
-    <div>
+    <>
       <Navbar />
       {children}
-    </div>
+    </>
   );
 };
 

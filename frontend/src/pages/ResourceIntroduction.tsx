@@ -2,7 +2,7 @@ import React from "react";
 
 const ResourceIntroduction = () => {
   return (
-    <div className="mx-auto border rounded-lg  p-4">
+    <div className="mx-auto border rounded-lg mb-12  p-4">
       <h1 className="text-3xl font-bold mb-4">About the Resource Center</h1>
       <p className="mb-4 text-sm ">
         Welcome to the Physics Resource Center, a dynamic platform designed to

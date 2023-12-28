@@ -1,6 +1,7 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import SidebarContent from "../components/phsicsResource/SidebarContent";
+
 const Explore = () => {
   return (
     <body>
