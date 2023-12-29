@@ -22,8 +22,19 @@ interface Course {
 interface Resource {
     _id: string;
     name: string;
+    slug: string
     courses: {
         course_title: string;
         introduction: string;
+        resourceSlug: string
     }[];
 }
+
+// Blogs
+interface Post {
+    _id: string;
+    title: string;
+    mainImage: any;
+    slug: string;
+    author: string;
+  }

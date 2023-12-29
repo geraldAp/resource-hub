@@ -16,7 +16,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/physics/resources" element={<Explore />}>
           <Route index element={<ResourceIntroduction />} />
-          <Route path=":level/:id" element={<Resources/>} />
+          <Route path=":courseSlug/:resourceSlug" element={<Resources/>} />
         </Route>
         <Route path="/blog" element={<Blog />}></Route>
         <Route path="/contact" element={<Contact />} />

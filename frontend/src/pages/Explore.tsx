@@ -11,7 +11,10 @@ const Explore = () => {
             <SidebarContent />
           </aside>
           <section className="col-span-3">
+            <div className="mx-auto border rounded-lg mb-12  p-4">
+
             <Outlet />
+            </div>
           </section>
         </section>
       </main>

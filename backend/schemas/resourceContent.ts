@@ -10,6 +10,14 @@ export default {
       type: 'string',
     },
     {
+      name: 'slug',
+      type: 'slug',
+      title: 'Slug',
+      options: {
+        source: 'name'
+      }
+    },
+    {
       name: 'courses',
       title: 'Courses',
       type: 'array',
@@ -37,10 +45,10 @@ export default {
               type: 'text',
             },
             {
-              name: 'resources',
-              title: 'Resources',
-              type: 'array',
-              of: [{ type: 'reference', to: { type: 'resource' } }],
+              name: 'resource',
+              title: 'Resource',
+              type: 'reference', 
+              to: [{ type: 'resource' }], 
             },
           ],
         },

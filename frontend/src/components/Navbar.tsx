@@ -37,7 +37,7 @@ const Navbar = () => {
       {Links.map((link: LinkType) => (
         <li key={link.id}>
           <NavLink
-            className={`text-sm md:text-base ease-in font-medium duration-500 rounded-3xl px-3 py-2`}
+            className={`text-sm 2xl:text-base ease-in font-semibold duration-500 rounded-3xl px-3 py-2`}
             to={link.src}
           >
             {link.name}

@@ -6,9 +6,11 @@ import { Link } from "react-router-dom";
 interface Resource {
   _id: string;
   name: string;
+  slug: string
   courses: {
     course_title: string;
     introduction: string;
+    resourceSlug: string
   }[];
 }
 
@@ -47,7 +49,7 @@ const ContentCategory: React.FC<PropType> = ({ Resources }) => {
 
                   {resource?.courses?.length > 0 ? (
                     resource.courses.map((course) => (
-                      <Link key={course.course_title}>{course.course_title}</Link>
+                      <Link to={`/physics/resources/${resource.slug}/${course.resourceSlug}`} key={course.course_title}>{course.course_title}</Link>
                     ))
                   ) : (
                     <div>
